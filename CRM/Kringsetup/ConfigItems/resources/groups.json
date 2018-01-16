@@ -1,0 +1,8 @@
+{
+  "permamed": {
+    "name": "permamed",
+    "title": "Permamed",
+    "is_active": "1",
+    "visibility": "User and User Admin Only"
+  }
+}

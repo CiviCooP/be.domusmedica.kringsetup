@@ -1,0 +1,80 @@
+{
+  "medisch_pakket": {
+    "name": "medisch_pakket",
+    "title": "Medisch pakket",
+    "data_type": "String",
+    "is_reserved": "1",
+    "is_active": "1",
+    "option_values": {
+      "Careconnect": {
+        "label": "Care Connect",
+        "value": "1",
+        "name": "Careconnect",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "Daktari": {
+        "label": "Daktari",
+        "value": "2",
+        "name": "Daktari",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "HealthOne": {
+        "label": "Health One",
+        "value": "3",
+        "name": "HealthOne",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "Medidoc": {
+        "label": "Medidoc",
+        "value": "4",
+        "name": "Medidoc",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "Pricare": {
+        "label": "Pricare",
+        "value": "5",
+        "name": "Pricare",
+        "is_default": "0",
+        "weight": "5",
+        "is_optgroup": "0",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "Prodoc": {
+        "label": "Prodoc",
+        "value": "6",
+        "name": "Prodoc",
+        "is_default": "0",
+        "weight": "6",
+        "is_optgroup": "0",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "Windoc": {
+        "label": "Windoc",
+        "value": "7",
+        "name": "Windoc",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "Ander": {
+        "label": "Ander",
+        "value" : "ander",
+        "name": "ander",
+        "is_reserved": "0",
+        "is_active": "1"
+      },
+      "Accrimed": {
+        "label": "Accrimed",
+        "value": "8",
+        "name": "Accrimed",
+        "is_reserved": "0",
+        "is_active": "1"
+      }
+    }
+  }
+}

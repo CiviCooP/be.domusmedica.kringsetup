@@ -1,0 +1,38 @@
+{
+  "Arts":
+  {
+    "name": "Arts",
+    "label":"Arts",
+    "parent_id":1
+  },
+  "HAIO":
+  {
+    "name": "HAIO",
+    "label":"HAIO",
+    "parent_id":1
+  },
+  "Praktijk":
+  {
+    "name": "Praktijk",
+    "label":"Praktijk",
+    "parent_id":3
+  },
+  "Kring":
+  {
+    "name": "Kring",
+    "label":"Kring",
+    "parent_id":3
+  },
+  "Wachtdienstonderdeel":
+  {
+    "name": "Wachtdienstonderdeel",
+    "label":"Wachtdienstonderdeel",
+    "parent_id":3
+  },
+  "Werkgroep":
+  {
+    "name": "Werkgroep",
+    "label":"Werkgroep",
+    "parent_id":3
+  }
+}

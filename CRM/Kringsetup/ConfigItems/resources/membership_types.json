@@ -1,0 +1,34 @@
+{
+  "HAIO":
+  {
+    "name": "HAIO",
+    "description":"HAIO",
+    "domain_id": 1,
+    "member_of_contact_id": 1,
+    "financial_type_id": 2,
+    "duration_unit": "year",
+    "duration_interval": 1,
+    "period_type": "fixed",
+    "fixed_period_start_day": 101,
+    "fixed_period_rollover_day": 1231,
+    "minimum_fee": 100,
+    "weight": 3,
+    "is_active": 1
+  },
+  "Lid van wachtpost":
+  {
+    "name": "Lid van wachtpost",
+    "description":"Lid van wachtpost",
+    "domain_id": 1,
+    "member_of_contact_id": 1,
+    "financial_type_id": 2,
+    "duration_unit": "year",
+    "duration_interval": 1,
+    "period_type": "fixed",
+    "fixed_period_start_day": 101,
+    "fixed_period_rollover_day": 1231,
+    "minimum_fee": 100,
+    "weight": 2,
+    "is_active": 1
+  }
+}

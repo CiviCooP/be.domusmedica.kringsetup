@@ -1,0 +1,236 @@
+{
+  "volgt opleiding in de praktijk": {
+    "name_a_b": "Volgt opleiding in de praktijk",
+    "label_a_b": "volgt opleiding in de praktijk",
+    "name_b_a": "Leert de praktijk bij",
+    "label_b_a": "heeft in opleiding",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "HAIO",
+    "contact_sub_type_b": "Praktijk",
+    "is_active": 1
+  },
+  "is arts bij": {
+    "name_a_b": "is arts bij",
+    "label_a_b": "is arts bij",
+    "name_b_a": "arts is",
+    "label_b_a": "arts is",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "contact_sub_type_b": "Praktijk",
+    "is_active": "1"
+  },
+  "is voorzitter van": {
+    "name_a_b": "is voorzitter van",
+    "label_a_b": "is voorzitter van",
+    "name_b_a": "heeft als voorzitter",
+    "label_b_a": "heeft als voorzitter",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is co-arts van": {
+    "name_a_b": "is co-arts van",
+    "label_a_b": "is co-arts van",
+    "name_b_a": "heeft als co-arts",
+    "label_b_a": "heeft als co-arts",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is lid van WDO": {
+    "name_a_b": "is lid van WDO",
+    "label_a_b": "is lid van WDO",
+    "name_b_a": "heeft als WDO",
+    "label_b_a": "heeft als lid",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is lid van groepspraktijk": {
+    "name_a_b": "is lid van groepspraktijk",
+    "label_a_b": "is lid van groepspraktijk",
+    "name_b_a": "groepspraktijk heeft als lid",
+    "label_b_a": "groepspraktijk heeft als lid",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "contact_sub_type_b": "Praktijk",
+    "is_active": "1"
+  },
+  "is lid van werkgroep": {
+    "name_a_b": "is lid van werkgroep",
+    "label_a_b": "is lid van werkgroep",
+    "name_b_a": "lid van werkgroep is",
+    "label_b_a": "heeft als lid",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "contact_sub_type_b": "Werkgroep",
+    "is_active": "1"
+  },
+  "is LOK-verantwoordelijke van": {
+    "name_a_b": "is LOK-verantwoordelijke van",
+    "label_a_b": "is LOK-verantwoordelijke van",
+    "name_b_a": "heeft als LOK-verantwoordelijke",
+    "label_b_a": "heeft als LOK-verantwoordelijke",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is Haio van": {
+    "name_a_b": "is Haio van",
+    "label_a_b": "is Haio van",
+    "name_b_a": "is PO van",
+    "label_b_a": "is PO van",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Individual",
+    "contact_sub_type_a": "HAIO",
+    "contact_sub_type_b": "Arts",
+    "is_active": "1"
+  },
+  "is penningmeester van": {
+    "name_a_b": "is penningmeester van",
+    "label_a_b": "is penningmeester van",
+    "name_b_a": "heeft als penningmeester",
+    "label_b_a": "heeft als penningmeester",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is secretaris van": {
+    "name_a_b": "is secretaris van",
+    "label_a_b": "is secretaris van",
+    "name_b_a": "heeft als secretaris",
+    "label_b_a": "heeft als secretaris",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is ondervoorzitter van": {
+    "name_a_b": "is ondervoorzitter van",
+    "label_a_b": "is ondervoorzitter van",
+    "name_b_a": "heeft als ondervoorzitter",
+    "label_b_a": "heeft als ondervoorzitter",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringcoordinator van": {
+    "name_a_b": "is kringcoordinator van",
+    "label_a_b": "is kringcoordinator van",
+    "name_b_a": "heeft als kringcoordinator",
+    "label_b_a": "heeft als kringcoordinator",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "is_active": "1"
+  },
+  "is bestuurslid van": {
+    "name_a_b": "is bestuurslid van",
+    "label_a_b": "is bestuurslid van",
+    "name_b_a": "heef als bestuurslid",
+    "label_b_a": "heeft als bestuurslid",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is CRA bij": {
+    "name_a_b": "is CRA bij",
+    "label_a_b": "is CRA bij",
+    "name_b_a": "heeft als CRA",
+    "label_b_a": "heeft als CRA",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde 1ste lijn Logo van": {
+    "name_a_b": "is kringgemandateerde 1ste lijn Logo van",
+    "label_a_b": "is kringgemandateerde 1ste lijn Logo van",
+    "name_b_a": "heeft als gemandateerde 1ste lijn LOGO",
+    "label_b_a": "heeft als gemandateerde 1ste lijn LOGO",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde SEL van": {
+    "name_a_b": "is kringgemandateerde SEL van",
+    "label_a_b": "is kringgemandateerde SEL van",
+    "name_b_a": "heeft als kringgemandateerde SEL",
+    "label_b_a": "heeft als kringgemandateerde SEL",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde 1ste lijn palliatief netwerk van": {
+    "name_a_b": "is kringgemandateerde 1ste lijn palliatief netwerk van",
+    "label_a_b": "is kringgemandateerde 1ste lijn palliatief netwerk van",
+    "name_b_a": "heeft als kringgemandateerde 1ste lijn palliatief netwerk",
+    "label_b_a": "heeft als kringgemandateerde 1ste lijn palliatief netwerk",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde 2de lijn van": {
+    "name_a_b": "is kringgemandateerde 2de lijn van",
+    "label_a_b": "is kringgemandateerde 2de lijn van",
+    "name_b_a": "heeft als kringgemandateerde 2de lijn",
+    "label_b_a": "heeft als kringgemandateerde 2de lijn",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde GGZ lokaal overleg van": {
+    "name_a_b": "is kringgemandateerde GGZ lokaal overleg van",
+    "label_a_b": "is kringgemandateerde GGZ lokaal overleg van",
+    "name_b_a": "heeft als kringgemandateerde GGZ lokaal overleg",
+    "label_b_a": "heeft als kringgemandateerde GGZ lokaal overleg",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde art 107 van": {
+    "name_a_b": "is kringgemandateerde art 107 van",
+    "label_a_b": "is kringgemandateerde art 107 van",
+    "name_b_a": "heeft als kringgemandateerde art 107",
+    "label_b_a": "heeft als kringgemandateerde art 107",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde kringloket Domus Medica van": {
+    "name_a_b": "is kringgemandateerde kringloket Domus Medica van",
+    "label_a_b": "is kringgemandateerde kringloket Domus Medica van",
+    "name_b_a": "heeft als kringgemandateerde kringloket Domus Medica",
+    "label_b_a": "heeft als kringgemandateerde kringloket Domus Medica",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  },
+  "is kringgemandateerde provinciaal platform van": {
+    "name_a_b": "is kringgemandateerde provinciaal platform van",
+    "label_a_b": "is kringgemandateerde provinciaal platform van",
+    "name_b_a": "heeft als kringgemandateerde provinciaal platform",
+    "label_b_a": "heeft als kringgemandateerde provinciaal platform",
+    "contact_type_a": "Individual",
+    "contact_type_b": "Organization",
+    "contact_sub_type_a": "Arts",
+    "is_active": "1"
+  }
+}
