@@ -1,0 +1,1 @@
+Installeert de nieuwe configuratie voor een DomusMedica Kring CiviCRM database.
