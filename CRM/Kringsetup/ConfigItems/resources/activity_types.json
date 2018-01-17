@@ -1,0 +1,9 @@
+{
+  "domusmedica_wachtpostdienst":
+  {
+    "value": 200,
+    "name": "domusmedica_wachtpostdienst",
+    "label":"Wachtpostdienst",
+    "is_reserved" : 0
+  }
+}

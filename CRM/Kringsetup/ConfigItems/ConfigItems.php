@@ -38,13 +38,14 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
 
   function install(){
 
-    $this->setContactTypes();
+   /* $this->setContactTypes();
     $this->setRelationshipTypes();
     $this->setMembershipTypes();
     $this->setOptionGroups();
-    $this->setGroups();
+    $this->setGroups();*/
+   $this->setActivityTypes();
     // customData as last one because it might need one of the previous ones (option group, relationship types, activity types)
-    $this->setCustomData();
+    //$this->setCustomData();
   }
 
   /**
@@ -65,6 +66,27 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
     foreach ($optionGroups as $name => $optionGroupParams) {
       $optionGroup = new CRM_Kringsetup_ConfigItems_OptionGroup();
       $optionGroup->create($optionGroupParams);
+    }
+  }
+
+  /**
+   * Method to create activity types
+   *
+   * @throws Exception when resource file not found
+   * @access protected
+   */
+  protected function setActivityTypes()
+  {
+    $jsonFile = $this->_resourcesPath . 'activity_types.json';
+    if (!file_exists($jsonFile)) {
+      throw new Exception(ts('Could not load activity_types configuration file for extension,
+      activity your system administrator!'));
+    }
+    $activityTypesJson = file_get_contents($jsonFile);
+    $activityTypes = json_decode($activityTypesJson, true);
+    foreach ($activityTypes as $name => $activityTypeParams) {
+      $activityType = new CRM_Kringsetup_ConfigItems_ActivityType();
+      $activityType->create($activityTypeParams);
     }
   }
 
