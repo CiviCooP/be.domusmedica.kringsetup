@@ -9,11 +9,10 @@ class CRM_Kringsetup_Upgrader extends CRM_Kringsetup_Upgrader_Base {
   // By convention, functions that look like "function upgrade_NNNN()" are
   // upgrade tasks. They are executed in order (like Drupal's hook_update_N).
 
-  /**
-   * Example: Run an external SQL script when the module is installed.
-   *
+
   public function install() {
-    $this->executeSqlFile('sql/myinstall.sql');
+    $configItems = new CRM_Kringsetup_ConfigItems_ConfigItems();
+    $configItems -> install();
   }
 
   /**
@@ -36,23 +35,20 @@ class CRM_Kringsetup_Upgrader extends CRM_Kringsetup_Upgrader_Base {
 
   /**
    * Example: Run an external SQL script when the module is uninstalled.
-   *
+   */
   public function uninstall() {
-   $this->executeSqlFile('sql/myuninstall.sql');
+    $configItems = new CRM_Kringsetup_ConfigItems_ConfigItems();
+    $configItems->uninstall();
   }
 
-  /**
-   * Example: Run a simple query when a module is enabled.
-   *
   public function enable() {
-    CRM_Core_DAO::executeQuery('UPDATE foo SET is_active = 1 WHERE bar = "whiz"');
+    $configItems = new CRM_Kringsetup_ConfigItems_ConfigItems();
+    $configItems->enable();
   }
 
-  /**
-   * Example: Run a simple query when a module is disabled.
-   *
   public function disable() {
-    CRM_Core_DAO::executeQuery('UPDATE foo SET is_active = 0 WHERE bar = "whiz"');
+    $configItems = new CRM_Kringsetup_ConfigItems_ConfigItems();
+    $configItems->disable();
   }
 
   /**

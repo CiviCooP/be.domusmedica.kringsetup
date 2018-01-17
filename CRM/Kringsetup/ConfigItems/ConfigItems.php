@@ -38,14 +38,15 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
 
   function install(){
 
-   /* $this->setContactTypes();
+    set_time_limit (300);
+    $this->setContactTypes();
     $this->setRelationshipTypes();
     $this->setMembershipTypes();
     $this->setOptionGroups();
-    $this->setGroups();*/
-   $this->setActivityTypes();
+    $this->setGroups();
+    $this->setActivityTypes();
     // customData as last one because it might need one of the previous ones (option group, relationship types, activity types)
-    //$this->setCustomData();
+    $this->setCustomData();
   }
 
   /**
@@ -385,7 +386,7 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
    */
   private function enableOptionGroups()
   {
-    $jsonFile = $this->_resourcePath . 'option_groups.json';
+    $jsonFile = $this->_resourcesPath . 'option_groups.json';
     if (file_exists($jsonFile)) {
       $optionGroupsJson = file_get_contents($jsonFile);
       $optionGroups = json_decode($optionGroupsJson, true);
@@ -401,7 +402,7 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
    */
   private function uninstallOptionGroups()
   {
-    $jsonFile = $this->_resourcePath . 'option_groups.json';
+    $jsonFile = $this->_resourcesPath. 'option_groups.json';
     if (file_exists($jsonFile)) {
       $optionGroupsJson = file_get_contents($jsonFile);
       $optionGroups = json_decode($optionGroupsJson, true);
