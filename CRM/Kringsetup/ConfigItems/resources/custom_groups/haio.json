@@ -1,0 +1,49 @@
+{
+  "Gegevens_Arts": {
+    "name": "Gegevens_HAIO",
+    "title": "Gegevens HAIO",
+    "extends": "Individual",
+    "extends_entity_column_value": [
+      "HAIO"
+    ],
+    "style": "Inline",
+    "collapse_display": "0",
+    "weight": "2",
+    "is_active": "1",
+    "is_reserved": "0",
+    "is_public": "1",
+    "fields": {
+      "haio_sinds": {
+        "name": "haio_sinds",
+        "label": "Haio Sinds",
+        "data_type": "Date",
+        "html_type": "Select Date",
+        "is_required": "0",
+        "is_searchable": "1",
+        "is_search_range": "0",
+        "weight": "7",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "date_format": "dd/mm/yy",
+        "note_columns": "60",
+        "note_rows": "4"
+      },
+      "opleidingsjaar": {
+        "name": "opleidingsjaar",
+        "label": "Opleidingsjaar",
+        "data_type": "Int",
+        "html_type": "Text",
+        "is_required": "0",
+        "is_searchable": "1",
+        "is_search_range": "0",
+        "weight": "18",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "note_columns": "60",
+        "note_rows": "4"
+      }
+    }
+  }
+}

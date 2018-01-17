@@ -1,0 +1,52 @@
+{
+  "wachtdienstonderdeel": {
+    "name": "wachtdienstonderdeel",
+    "title": "Gegevens Wachtdienstonderdeel",
+    "extends": "Organization",
+    "extends_entity_column_value": [
+      "Wachtdienstonderdeel"
+    ],
+    "style": "Inline",
+    "collapse_display": "0",
+    "weight": "4",
+    "is_active": "1",
+    "is_reserved": "0",
+    "is_public": "1",
+    "fields": {
+      "gemeenten": {
+        "name": "gemeenten",
+        "label": "Gemeenten",
+        "data_type": "String",
+        "html_type": "Multi-Select",
+        "is_required": "0",
+        "is_searchable": "0",
+        "is_search_range": "0",
+        "weight": "15",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "note_columns": "60",
+        "note_rows": "4",
+        "option_group": "gemeenten",
+        "in_selector": "0"
+      },
+      "opmerkingen_bij_gebied": {
+        "name": "opmerkingen_bij_gebied",
+        "label": "Opmerkingen bij gebied",
+        "data_type": "String",
+        "html_type": "Text",
+        "is_required": "0",
+        "is_searchable": "0",
+        "is_search_range": "0",
+        "weight": "19",
+        "help_pre": "Geef hier de uitzonderingen aan op de postcodes die hierboven staan (vb. gehuchten die wel of niet bij het wachtdienstonderdeel hoort)",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "note_columns": "60",
+        "note_rows": "4",
+        "in_selector": "0"
+      }
+    }
+  }
+}
