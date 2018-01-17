@@ -1,0 +1,33 @@
+{
+  "Prive": {
+    "name": "Prive",
+    "display_name": "Privé",
+    "vcard_name": "HOME",
+    "description": "Woonadres",
+    "is_reserved": "0",
+    "is_active": "1",
+    "is_default": "1"
+  },
+  "Praktijkadres": {
+    "name": "Praktijkadres",
+    "display_name": "Praktijkadres",
+    "description": "Praktijkadres",
+    "is_reserved": "0",
+    "is_active": "1",
+    "is_default": "0"
+  },
+  "Billing": {
+    "name": "Billing",
+    "display_name": "Factuuradres",
+    "description": "Factuuradres",
+    "is_reserved": "1",
+    "is_active": "1",
+    "is_default": "0"
+  },
+  "Werkadres": {
+    "name": "Werkadres",
+    "display_name": "Werkadres",
+    "is_active": "1",
+    "is_default": "0"
+  }
+}

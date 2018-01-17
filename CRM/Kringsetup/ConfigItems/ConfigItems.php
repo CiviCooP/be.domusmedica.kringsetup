@@ -36,6 +36,9 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
     $this->_customDataDir = $customDataDir;
   }
 
+  /**
+   * @throws \Exception
+   */
   function install(){
 
     set_time_limit (300);
@@ -47,6 +50,7 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
     $this->setActivityTypes();
     // customData as last one because it might need one of the previous ones (option group, relationship types, activity types)
     $this->setCustomData();
+    $this->setLocationTypes();
   }
 
   /**
@@ -109,6 +113,26 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
     foreach ($contactTypes as $name => $contactTypeParams) {
       $contactType = new CRM_Kringsetup_ConfigItems_ContactType();
       $contactType->create($contactTypeParams);
+    }
+  }
+
+  /**
+   * Method to create location types
+   *
+   * @throws Exception when resource file not found
+   */
+  protected function setLocationTypes()
+  {
+    $jsonFile = $this->_resourcesPath . 'location_types.json';
+    if (!file_exists($jsonFile)) {
+      throw new Exception(ts('Could not load location_types configuration file for extension,
+      contact your system administrator!'));
+    }
+    $locationTypesJson = file_get_contents($jsonFile);
+    $locationTypes = json_decode($locationTypesJson, true);
+    foreach ($locationTypes as $name => $locationTypeParams) {
+      $locationType = new CRM_Kringsetup_ConfigItems_LocationType();
+      $locationType->create($locationTypeParams);
     }
   }
 
