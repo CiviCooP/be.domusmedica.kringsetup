@@ -1,6 +1,6 @@
 {
-  "Gegevens_Arts": {
-    "name": "Gegevens_HAIO",
+  "gegevens_haio": {
+    "name": "gegevens_haio",
     "title": "Gegevens HAIO",
     "extends": "Individual",
     "extends_entity_column_value": [

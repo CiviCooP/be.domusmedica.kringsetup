@@ -1,0 +1,39 @@
+{
+  "wachtpost_velden": {
+    "name": "wachtpost_velden",
+    "title": "Wachtpost velden",
+    "extends": "Activity",
+    "extends_entity_column_value": [
+      "domusmedica_wachtpostdienst"
+    ],
+    "style": "Inline",
+    "collapse_display": "0",
+    "weight": "7",
+    "is_active": "1",
+    "is_multiple": "0",
+    "collapse_adv_display": "0",
+    "is_reserved": "0",
+    "is_public": "1",
+    "fields": {
+      "einddatum_tijd": {
+        "name": "einddatum_tijd",
+        "label": "Einddatum/tijd",
+        "data_type": "Date",
+        "html_type": "Select Date",
+        "is_required": "0",
+        "is_searchable": "0",
+        "is_search_range": "0",
+        "weight": "5",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "date_format": "d M yy",
+        "time_format": "2",
+        "note_columns": "60",
+        "note_rows": "4",
+        "column_name": "einddatum_tijd_33",
+        "in_selector": "0"
+      }
+    }
+  }
+}

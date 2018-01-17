@@ -1,0 +1,70 @@
+{
+  "Arts_Wacht": {
+    "name": "Arts_Wacht",
+    "title": "Arts & Wacht",
+    "extends": "Individual",
+    "extends_entity_column_value": [
+      "Arts"
+    ],
+    "style": "Tab",
+    "collapse_display": "0",
+    "weight": "6",
+    "is_active": "1",
+    "is_multiple": "1",
+    "collapse_adv_display": "0",
+    "is_reserved": "0",
+    "is_public": "1",
+    "fields": {
+      "vrijgesteld_van": {
+        "name": "vrijgesteld_van",
+        "label": "Vrijgesteld van",
+        "data_type": "Date",
+        "html_type": "Select Date",
+        "is_required": "1",
+        "is_searchable": "1",
+        "is_search_range": "1",
+        "weight": "8",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "date_format": "dd/mm/yy",
+        "note_columns": "60",
+        "note_rows": "4",
+        "in_selector": "1"
+      },
+      "vrijgesteld_tot": {
+        "name": "vrijgesteld_tot",
+        "label": "Vrijgesteld tot",
+        "data_type": "Date",
+        "html_type": "Select Date",
+        "is_required": "0",
+        "is_searchable": "1",
+        "is_search_range": "1",
+        "weight": "12",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "date_format": "dd/mm/yy",
+        "note_columns": "60",
+        "note_rows": "4",
+        "in_selector": "1"
+      },
+      "vrijgesteld": {
+        "name": "vrijgesteld",
+        "label": "Vrijgesteld?",
+        "data_type": "Boolean",
+        "html_type": "Radio",
+        "is_required": "1",
+        "is_searchable": "1",
+        "is_search_range": "0",
+        "weight": "2",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "note_columns": "60",
+        "note_rows": "4",
+        "in_selector": "1"
+      }
+    }
+  }
+}

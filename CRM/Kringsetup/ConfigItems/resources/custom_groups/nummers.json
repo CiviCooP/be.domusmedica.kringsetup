@@ -1,0 +1,65 @@
+{
+  "nummers": {
+    "name": "nummers",
+    "title": "Nummers",
+    "extends": "Contact",
+    "style": "Inline",
+    "collapse_display": "0",
+    "weight": "8",
+    "is_active": "1",
+    "is_multiple": "0",
+    "collapse_adv_display": "0",
+    "is_reserved": "0",
+    "is_public": "1",
+    "fields": {
+      "btw_nummer": {
+        "name": "btw_nummer",
+        "label": "BTW nummer",
+        "data_type": "String",
+        "html_type": "Text",
+        "is_required": "0",
+        "is_searchable": "1",
+        "is_search_range": "0",
+        "weight": "6",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "note_columns": "60",
+        "note_rows": "4",
+        "in_selector": "0"
+      },
+      "rijksregisternummer": {
+        "name": "rijksregisternummer",
+        "label": "Rijksregisternummer",
+        "data_type": "String",
+        "html_type": "Text",
+        "is_required": "0",
+        "is_searchable": "1",
+        "is_search_range": "0",
+        "weight": "11",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "note_columns": "60",
+        "note_rows": "4",
+        "in_selector": "0"
+      },
+      "bankrekening": {
+        "name": "bankrekening",
+        "label": "Bankrekening",
+        "data_type": "String",
+        "html_type": "Text",
+        "is_required": "0",
+        "is_searchable": "0",
+        "is_search_range": "0",
+        "weight": "14",
+        "is_active": "1",
+        "is_view": "0",
+        "text_length": "255",
+        "note_columns": "60",
+        "note_rows": "4",
+        "in_selector": "0"
+      }
+    }
+  }
+}
