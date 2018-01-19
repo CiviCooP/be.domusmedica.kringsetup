@@ -4,7 +4,7 @@
     "title": "Wachtpost velden",
     "extends": "Activity",
     "extends_entity_column_value": [
-      "domusmedica_wachtpostdienst"
+      "200"
     ],
     "style": "Inline",
     "collapse_display": "0",
