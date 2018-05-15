@@ -15,6 +15,8 @@ class CRM_Kringsetup_ConfigItems_OptionValue {
    */
   public function __construct() {
     $this->_apiParams = array();
+    // standard name is used for identification
+    $this->_key = 'name';
   }
 
   /**
@@ -30,6 +32,14 @@ class CRM_Kringsetup_ConfigItems_OptionValue {
     if (!isset($params['option_group_id']) || empty($params['option_group_id'])) {
       throw new Exception(ts('Missing mandatory param option_group_id in '.__METHOD__));
     }
+    if (isset($params['key'])){
+      $this->_key=$params['key'];
+      // remove key from parameters (it has done its job)
+      unset($params['key']);
+    }
+    if($this->_key!='name'&&$this->_key!='value'){
+      throw new Exception(ts('Invalid option value key type '.$this->_key));
+    }
     $this->_apiParams = $params;
   }
 
@@ -42,7 +52,7 @@ class CRM_Kringsetup_ConfigItems_OptionValue {
    */
   public function create($params) {
     $this->validateCreateParams($params);
-    $existing = $this->getWithNameAndOptionGroupId($this->_apiParams['name'], $this->_apiParams['option_group_id']);
+    $existing = $this->getWithKeyAndOptionGroupId();
     if (isset($existing['id'])) {
       $this->_apiParams['id'] = $existing['id'];
     }
@@ -65,14 +75,28 @@ class CRM_Kringsetup_ConfigItems_OptionValue {
   }
 
   /**
-   * Method to get the option group with name
+   * Method to identify an option group value. For identification
+   * two methods are offerd
+   * standard is name
+   * however, when the key parameter is set, id is also posible
+   *
    *
    * @param string $name
    * @param int $optionGroupId
    * @return array|boolean
    */
-  public function getWithNameAndOptionGroupId($name, $optionGroupId) {
-    $params = array('name' => $name, 'option_group_id' => $optionGroupId);
+  public function getWithKeyAndOptionGroupId() {
+    if($this->_key=='name') {
+      $params = array(
+        'name' => $this->_apiParams['name'],
+        'option_group_id' =>  $this->_apiParams['option_group_id']
+      );
+    } elseif($this->_key=='value'){
+      $params= array(
+        'value'=>$this->_apiParams['value'],
+        'option_group_id'=> $this->_apiParams['option_group_id']
+      );
+    }
     try {
       return civicrm_api3('OptionValue', 'Getsingle', $params);
     } catch (CiviCRM_API3_Exception $ex) {

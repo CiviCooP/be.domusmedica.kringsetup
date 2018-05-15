@@ -9669,5 +9669,92 @@
         "is_active": "1"
       }
     }
+  },
+  "email_greeting" : {
+    "name": "email_greeting",
+    "option_values": {
+      "1" : {
+        "key" : "value",
+        "value" : "1",
+        "label" : "Beste {contact.first_name}",
+        "name"  : "Beste {contact.first_name}"
+      },
+      "2" : {
+        "key" : "value",
+        "value" : "2",
+        "label" : "Beste {contact.individual_prefix} {contact.first_name} {contact.last_name}",
+        "name"  : "Beste {contact.individual_prefix} {contact.first_name} {contact.last_name}"
+      },
+      "3" : {
+        "key" : "value",
+        "value" : "3",
+        "label" : "Beste {contact.individual_prefix} {contact.last_name}",
+        "name"  : "Beste {contact.individual_prefix} {contact.last_name}"
+      },
+      "4" : {
+        "key" : "value",
+        "value" : "4",
+        "label" : "Aangepast",
+        "name"  : "Aangepast"
+      },
+      "5" : {
+        "key" : "value",
+        "value" : "5",
+        "label" : "Beste {contact.household_name}",
+        "name"  : "Beste {contact.household_name}"
+      }
+    }
+  },
+  "postal_greeting" : {
+    "name": "postal_greeting",
+    "option_values": {
+      "1" : {
+        "key" : "value",
+        "value" : "1",
+        "label" : "Beste {contact.first_name}",
+        "name"  : "Beste {contact.first_name}"
+      },
+      "2" : {
+        "key" : "value",
+        "value" : "2",
+        "label" : "Beste {contact.individual_prefix} {contact.first_name} {contact.last_name}",
+        "name"  : "Beste {contact.individual_prefix} {contact.first_name} {contact.last_name}"
+      },
+      "3" : {
+        "key" : "value",
+        "value" : "3",
+        "label" : "Beste {contact.individual_prefix} {contact.last_name}",
+        "name"  : "Beste {contact.individual_prefix} {contact.last_name}"
+      },
+      "4" : {
+        "key" : "value",
+        "value" : "4",
+        "label" : "Aangepast",
+        "name"  : "Aangepast"
+      },
+      "5" : {
+        "key" : "value",
+        "value" : "5",
+        "label" : "Beste {contact.household_name}",
+        "name"  : "Beste {contact.household_name}"
+      }
+    }
+  },
+  "individual_prefix" : {
+    "name": "individual_prefix",
+    "option_values" : {
+      "Mrs." : {
+        "name": "Mrs.",
+        "label": "mevrouw"
+      },
+      "Ms." : {
+        "name": "Ms.",
+        "label": "juffrouw"
+      },
+      "Dhr." : {
+        "name": "Dhr.",
+        "label": "mijnheer"
+      }
+    }
   }
 }

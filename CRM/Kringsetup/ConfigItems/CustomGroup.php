@@ -196,7 +196,7 @@ class CRM_Kringsetup_ConfigItems_CustomGroup {
       if (is_array($this->_apiParams['extends_entity_column_value'])) {
         foreach ($this->_apiParams['extends_entity_column_value'] as $extendsValue) {
           $activityType = new CRM_Kringsetup_ConfigItems_ActivityType();
-          $found = $activityType->getWithNameAndOptionGroupId($extendsValue, $activityType->getOptionGroupId());
+          $found = $activityType->getWithKeyAndOptionGroupId($extendsValue, $activityType->getOptionGroupId());
           if (isset($found['value'])) {
             $this->_apiParams['extends_entity_column_value'][] = $found['value'];
           }
@@ -204,7 +204,7 @@ class CRM_Kringsetup_ConfigItems_CustomGroup {
         }
       } else {
         $activityType = new CRM_Kringsetup_ConfigItems_ActivityType();
-        $found = $activityType->getWithNameAndOptionGroupId($this->_apiParams['extends_entity_column_value'], $activityType->getOptionGroupId());
+        $found = $activityType->getWithKeyAndOptionGroupId($this->_apiParams['extends_entity_column_value'], $activityType->getOptionGroupId());
         if (isset($found['value'])) {
           $this->_apiParams['extends_entity_column_value'] = $found['value'];
         }
