@@ -55,14 +55,23 @@ class CRM_Kringsetup_ConfigItems_ContactType {
    *
    * @access private
    */
+
   private function updateNavigationMenuUrl() {
+
+
     // todo check if this is still applicable
     // check if there is a "New <label>" entry in the navigation table
     $query = "SELECT * FROM civicrm_navigation WHERE label = %1";
     $label = "New ".$this->_apiParams['label'];
     $dao = CRM_Core_DAO::executeQuery($query, array(1 => array($label, 'String')));
     $validParent = array("New Organization", "New Individual", "New Household");
-    $newUrl = 'civicrm/membership/add&ct=Organization&cst='.$this->_apiParams['name'].'&reset=1';
+    $contactType = array(
+      1 => 'Individual',
+      2 => 'Household',
+      3 => 'Organization'
+    )[$this->_apiParams['parent_id']];
+
+    $newUrl = 'civicrm/contact/add?ct='.$contactType.'&cst='.$this->_apiParams['name'].'&reset=1';
     $newName = "New ".$this->_apiParams['name'];
     while ($dao->fetch()) {
       // parent should be either New Organization, New Individual or New Household

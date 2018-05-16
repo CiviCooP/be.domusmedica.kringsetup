@@ -51,6 +51,7 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
     // customData as last one because it might need one of the previous ones (option group, relationship types, activity types)
     $this->setCustomData();
     $this->setLocationTypes();
+    $this->setWordReplacements();
   }
 
   /**
@@ -137,6 +138,25 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
   }
 
   /**
+   * Method to add word replacements (used to add forgotten translations).
+   *
+   * @throws \Exception
+   */
+  protected function setWordReplacements(){
+    $jsonFile = $this->_resourcesPath . 'wordreplacements.json';
+    if (!file_exists($jsonFile)) {
+      throw new Exception(ts('Could not load "wordreplacements" configuration file for extension,
+      contact your system administrator!'));
+    }
+    $wordReplacementsJson = file_get_contents($jsonFile);
+    $wordReplacements = json_decode($wordReplacementsJson, true);
+    foreach($wordReplacements as $name => $wordReplacement){
+      CRM_Kringsetup_Utils::addReplaceWord($wordReplacement['find_word'],$wordReplacement['replace_word']);
+    }
+
+  }
+
+  /**
    * Method to create relationship types
    *
    * @throws Exception when resource file not found
@@ -191,7 +211,11 @@ class CRM_Kringsetup_ConfigItems_ConfigItems
     }
   }
 
-
+  /**
+   * Method to add groups
+   *
+   * @throws \Exception
+   */
   protected function setGroups()
   {
     $jsonFile = $this->_resourcesPath . 'groups.json';

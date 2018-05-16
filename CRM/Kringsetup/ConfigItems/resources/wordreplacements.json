@@ -1,0 +1,26 @@
+{
+  "New Werkgroep" : {
+     "find_word" : "New Werkgroep",
+     "replace_word" : "Nieuwe Werkgroep"
+  },
+  "New Arts" : {
+    "find_word" : "New Arts",
+    "replace_word" : "Nieuwe Arts"
+  },
+  "New HAIO" : {
+    "find_word" : "New HAIO",
+    "replace_word" : "Nieuwe HAIO"
+  },
+  "New Praktijk" : {
+    "find_word" : "New Praktijk",
+    "replace_word" : "Nieuwe Praktijk"
+  },
+  "New Kring" : {
+    "find_word" : "New Kring",
+    "replace_word" : "Nieuwe Kring"
+  },
+  "New Wachtdienstonderdeel" : {
+    "find_word" : "New Wachtdienstonderdeel",
+    "replace_word" : "Nieuwe Wachtdienstonderdeel"
+  }
+}
