@@ -21,6 +21,9 @@ class CRM_Kringsetup_ConfigItems_LocationType {
       throw new Exception('Missing mandatory param name in '.__METHOD__);
     }
     $this->_apiParams = $params;
+    if(isset($this->$this->_apiParams['is_active'])){
+      $this->_apiParams['is_active']=1;
+    }
   }
 
   /**
@@ -36,7 +39,6 @@ class CRM_Kringsetup_ConfigItems_LocationType {
     if (isset($existing['id'])) {
       $this->_apiParams['id'] = $existing['id'];
     }
-    $this->_apiParams['is_active'] = 1;
     try {
       civicrm_api3('LocationType', 'Create', $this->_apiParams);
     } catch (CiviCRM_API3_Exception $ex) {
